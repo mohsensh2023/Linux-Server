@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 360
+    timeout-minutes: 4800
 
     steps:
       - name: 1. Checkout Repository
@@ -65,7 +65,7 @@ jobs:
           echo "  💾 Persistent Folder : /home/cynetadmin/workspace"
           echo "=================================================="
 
-      - name: 6. Server Keep-Alive (5h 55m)
+      - name: 6. Server Keep-Alive (80h)
         run: |
           for i in {1..355}; do
             sleep 60
