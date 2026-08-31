@@ -65,7 +65,7 @@ jobs:
           echo "  💾 Persistent Folder : /home/cynetadmin/workspace"
           echo "=================================================="
 
-      - name: 6. Server Keep-Alive (80h)
+      - name: 6. Server Keep-Alive (5h 55m)
         run: |
           for i in {1..355}; do
             sleep 60
